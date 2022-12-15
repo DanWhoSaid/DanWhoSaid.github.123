@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biology Organelles</title>
+    <link rel="icon" href="/images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Old Standard TT' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif" rel="stylesheet">
+    <style>
+        html, body {
+            height:100%; 
+        }
+        body {
+            background: url("images/background.png") repeat 0 0 / 60px 60px, #61b656;
+            animation: move 100s linear infinite;
+        }
+        @keyframes move {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 100%;
+            }
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            font-family: 'Old Standard TT';
+        }
+        #info > h1 {
+            font-size: 50px;
+        }
+        #boxes {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #info, #cell {
+            height: 100vh;
+            width: 49%;
+        }
+        .center, p {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .blur {
+            background-color: rgba(255, 255, 255, .15);  
+            backdrop-filter: blur(1px);
+        }
+        p {
+            color: white;
+            font-family: 'PT Serif', serif;
+            width: 90%;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="boxes">
+        <div class="blur" id="cell">
+            <h1>The Cell's Organelles</h1>
+            <img class="center" src="images/cell_diagram.png" width="500" height="500">
+        </div>
+        <div class="blur" id="info">
+            <h1>Organelle Name</h1>
+            <p>         The cell membrane, also known as the plasma membrane, is a thin, flexible barrier that surrounds the cells of all living organisms. It is made up of a double layer of phospholipid molecules, with various proteins embedded in the layer. The cell membrane serves several important functions, including:
+                
+                Cell recognition: The cell membrane also contains special proteins that help the cell to recognize and interact with other cells. This is important for the immune system and for the formation of tissues and organs in the body.
+                
+                In summary, the cell membrane is a critical component of all living cells, providing protection, transport, communication, and recognition functions. Without this vital structure, cells would not be able to function properly, and life as we know it would not be possible.</p>
+            <img class="center" src="https://www.genome.gov/sites/default/files/tg/en/illustration/plasma_membrane.jpg" width="60%" height="40%">
+        </div>
+    </div>
+</body>
+</html>
